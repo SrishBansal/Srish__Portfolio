@@ -151,7 +151,7 @@ export default function Contact() {
               </p>
               <div className="space-y-4">
                 <a
-                  href="https://github.com/yourusername"
+                  href="https://github.com/SrishBansal"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-3 text-gray-400 hover:text-blue-400 transition-colors duration-300"
@@ -162,7 +162,7 @@ export default function Contact() {
                   GitHub
                 </a>
                 <a
-                  href="https://linkedin.com/in/yourusername"
+                  href="https://www.linkedin.com/in/srish-bansal/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-3 text-gray-400 hover:text-blue-400 transition-colors duration-300"

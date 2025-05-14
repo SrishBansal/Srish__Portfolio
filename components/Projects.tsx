@@ -9,33 +9,29 @@ const projects = [
     title: 'Music Recommendation System',
     description: 'A personalized music recommendation system built using Spotify API and Gradio for a sleek, Netflix-inspired UI.',
     techStack: ['Python', 'Gradio', 'Spotify API', 'SQLite'],
-    demoLink: '#',
-    githubLink: '#',
+    githubLink: 'https://github.com/SrishBansal/Music-Recommendation-System',
     image: '/images/project-music.jpg'
   },
   {
     title: 'Fake QR Code Detection',
     description: 'An innovative software that detects fake QR codes to ensure security.',
     techStack: ['Python', 'OpenCV', 'Machine Learning'],
-    demoLink: '#',
-    githubLink: '#',
+    githubLink: 'https://github.com/SrishBansal/Fake_QR_Code_Detection',
     image: '/images/project-qr.jpg'
   },
   {
     title: 'Timechain NFT Platform',
     description: 'An MVP allowing artists to store their content and issue a single NFT for ownership.',
     techStack: ['Python', 'Smart Contracts', 'Blockchain'],
-    demoLink: '#',
-    githubLink: '#',
+    githubLink: 'https://github.com/SrishBansal/Tsoc-_24_H1',
     image: '/images/project-nft.jpg'
   },
   {
     title: 'Insurance Verification System',
     description: 'A system designed for verifying the authenticity of insurance claims using automated checks.',
     techStack: ['Python', 'SQL', 'Web Development'],
-    demoLink: '#',
-    githubLink: '#',
-    image: '/images/project-insurance.jpg'
+    githubLink: 'https://github.com/SrishBansal/OrbitEdge_Codex',
+    image: '/images/project-insurance.png'
   }
 ];
 
@@ -94,15 +90,6 @@ export default function Projects() {
                   ))}
                 </div>
                 <div className="flex gap-4">
-                  <a
-                    href={project.demoLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors"
-                  >
-                    <ArrowTopRightOnSquareIcon className="h-5 w-5" />
-                    <span>Live Demo</span>
-                  </a>
                   <a
                     href={project.githubLink}
                     target="_blank"
