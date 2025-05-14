@@ -9,19 +9,19 @@ const socialLinks = [
   {
     name: 'GitHub',
     icon: <FaGithub className="w-6 h-6" />,
-    href: 'https://github.com/yourusername',
+    href: 'https://github.com/SrishBansal',
     color: 'hover:text-gray-200'
   },
   {
     name: 'LinkedIn',
     icon: <FaLinkedin className="w-6 h-6" />,
-    href: 'https://linkedin.com/in/yourusername',
+    href: 'https://www.linkedin.com/in/srish-bansal/',
     color: 'hover:text-blue-400'
   },
   {
     name: 'Email',
     icon: <FaEnvelope className="w-6 h-6" />,
-    href: 'mailto:your.email@example.com',
+    href: 'mailto:besrish@gmail.com',
     color: 'hover:text-red-400'
   }
 ];

@@ -6,28 +6,32 @@ import { FaGithub } from 'react-icons/fa';
 
 const projects = [
   {
-    title: 'OrbitEdge - Insurance Claims Analysis Dashboard',
-    description: 'Led the design and implementation of an analytics dashboard that processed 10,000+ insurance claims, delivering 8 interactive visualizations. Deployed a RAG system with 95% mapping accuracy.',
-    techStack: ['Python', 'FastAPI', 'Streamlit', 'RAG', 'AI'],
-    image: '/project1.jpg',
-    demoLink: '#',
-    githubLink: '#',
+    title: 'Music Recommendation System',
+    description: 'A personalized music recommendation system built using Spotify API and Gradio for a sleek, Netflix-inspired UI.',
+    techStack: ['Python', 'Gradio', 'Spotify API', 'SQLite'],
+    githubLink: 'https://github.com/SrishBansal/Music-Recommendation-System',
+    image: '/images/project-music.jpg'
   },
   {
-    title: 'MusicMatch',
-    description: 'Developed a comprehensive music recommendation system processing 10,000+ songs with Gradio UI and playlist management. Optimized recommendation algorithms with 30% faster loading times.',
-    techStack: ['Python', 'Gradio', 'Spotify API', 'SQLite', 'Pandas'],
-    image: '/project2.jpg',
-    demoLink: '#',
-    githubLink: '#',
+    title: 'Fake QR Code Detection',
+    description: 'An innovative software that detects fake QR codes to ensure security.',
+    techStack: ['Python', 'OpenCV', 'Machine Learning'],
+    githubLink: 'https://github.com/SrishBansal/Fake_QR_Code_Detection',
+    image: '/images/project-qr.jpg'
   },
   {
-    title: 'Fake QR Code Detection System',
-    description: 'Designed and deployed a machine learning model achieving 88% accuracy in detecting fraudulent QR codes. Processed over 2,500 QR code images, securing 5th place among 80+ teams.',
-    techStack: ['Python', 'TensorFlow', 'Transfer Learning'],
-    image: '/project3.jpg',
-    demoLink: '#',
-    githubLink: '#',
+    title: 'Timechain NFT Platform',
+    description: 'An MVP allowing artists to store their content and issue a single NFT for ownership.',
+    techStack: ['Python', 'Smart Contracts', 'Blockchain'],
+    githubLink: 'https://github.com/SrishBansal/Tsoc-_24_H1',
+    image: '/images/project-nft.jpg'
+  },
+  {
+    title: 'Insurance Verification System',
+    description: 'A system designed for verifying the authenticity of insurance claims using automated checks.',
+    techStack: ['Python', 'SQL', 'Web Development'],
+    githubLink: 'https://github.com/SrishBansal/OrbitEdge_Codex',
+    image: '/images/project-insurance.png'
   }
 ];
 
@@ -59,19 +63,23 @@ export default function Projects() {
               className="bg-blue-900/20 rounded-lg overflow-hidden hover:bg-blue-900/30 transition-all group"
             >
               <div className="relative h-48 overflow-hidden">
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                />
-                <a
-                  href={project.githubLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="absolute top-3 right-3 w-10 h-10 bg-black/50 rounded-full flex items-center justify-center backdrop-blur-sm hover:bg-blue-600/50 transition-colors"
-                >
-                  <FaGithub className="text-white text-xl" />
-                </a>
+                {project.image && (
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  />
+                )}
+                {project.githubLink && (
+                  <a
+                    href={project.githubLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="absolute top-3 right-3 w-10 h-10 bg-black/50 rounded-full flex items-center justify-center backdrop-blur-sm hover:bg-blue-600/50 transition-colors"
+                  >
+                    <FaGithub className="text-white text-xl" />
+                  </a>
+                )}
               </div>
               
               <div className="p-6">
@@ -87,16 +95,18 @@ export default function Projects() {
                     </span>
                   ))}
                 </div>
-                <motion.a
-                  href={project.demoLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-block px-6 py-2 bg-blue-600/20 text-blue-400 rounded-lg hover:bg-blue-600/30 transition-colors"
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                >
-                  View Demo
-                </motion.a>
+                {project.githubLink && (
+                  <motion.a
+                    href={project.githubLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block px-6 py-2 bg-blue-600/20 text-blue-400 rounded-lg hover:bg-blue-600/30 transition-colors"
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                  >
+                    View on GitHub
+                  </motion.a>
+                )}
               </div>
             </motion.div>
           ))}

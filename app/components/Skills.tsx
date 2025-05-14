@@ -47,24 +47,9 @@ const skills: Skill[] = [
     color: '#3178C6'
   },
   {
-    icon: <SiReact className="w-12 h-12" />,
-    name: 'React',
-    color: '#61DAFB'
-  },
-  {
-    icon: <SiNextdotjs className="w-12 h-12" />,
-    name: 'Next.js',
-    color: '#000000'
-  },
-  {
     icon: <SiTailwindcss className="w-12 h-12" />,
     name: 'Tailwind',
     color: '#06B6D4'
-  },
-  {
-    icon: <SiNodedotjs className="w-12 h-12" />,
-    name: 'Node.js',
-    color: '#339933'
   },
   {
     icon: <SiTensorflow className="w-12 h-12" />,

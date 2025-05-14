@@ -76,6 +76,13 @@ export default function Projects() {
               variants={item}
               className="bg-gray-900 rounded-xl overflow-hidden border border-gray-800 hover:border-blue-500/50 transition-colors duration-300"
             >
+              {project.image && (
+                <img 
+                  src={project.image}
+                  alt={`${project.title} thumbnail`}
+                  className="w-full h-48 object-cover"
+                />
+              )}
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-white mb-3">{project.title}</h3>
                 <p className="text-gray-400 mb-4">{project.description}</p>
@@ -90,15 +97,17 @@ export default function Projects() {
                   ))}
                 </div>
                 <div className="flex gap-4">
-                  <a
-                    href={project.githubLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors"
-                  >
-                    <CodeBracketIcon className="h-5 w-5" />
-                    <span>GitHub</span>
-                  </a>
+                  {project.githubLink && (
+                    <a
+                      href={project.githubLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors"
+                    >
+                      <CodeBracketIcon className="h-5 w-5" />
+                      <span>GitHub</span>
+                    </a>
+                  )}
                 </div>
               </div>
             </motion.div>
