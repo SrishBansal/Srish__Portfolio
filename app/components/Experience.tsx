@@ -26,7 +26,7 @@ const experiences: Experience[] = [
       'Developed artist upload system, NFT minting, and DRM access tokens',
       'Secure token-based access control'
     ],
-    link: '#',
+    link: 'https://www.linkedin.com/posts/srish-bansal_blockchaindevelopment-nfts-drm-activity-7285989654942638081-uaYD?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAEAFqf4Bg2eb0iB1nfTutNfeArW3-YwVKZw',
     linkText: 'View Project Details',
     icon: <FaCode className="text-blue-400" />
   },
@@ -39,7 +39,7 @@ const experiences: Experience[] = [
       'Built a Fake QR Code Detection System',
       'Used computer vision and validation techniques'
     ],
-    link: '#',
+    link: 'https://www.linkedin.com/posts/srish-bansal_winners-of-clash-of-t-ai-tans-activity-7231899072847089664-dVZe?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAEAFqf4Bg2eb0iB1nfTutNfeArW3-YwVKZw',
     linkText: 'View Project',
     icon: <FaTrophy className="text-yellow-400" />
   },
@@ -52,7 +52,7 @@ const experiences: Experience[] = [
       'Contributed to Python and web tech projects',
       'Participated in reviews and community discussions'
     ],
-    link: '#',
+    link: 'https://www.linkedin.com/posts/srish-bansal_hacktoberfest-opensource-growthmindset-activity-7259063254017052672-ud3C?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAEAFqf4Bg2eb0iB1nfTutNfeArW3-YwVKZw',
     linkText: 'View Profile',
     icon: <FaGithub className="text-purple-400" />
   },
@@ -65,7 +65,7 @@ const experiences: Experience[] = [
       'Published article simplifying Ethereum fundamentals',
       'Positive feedback from beginner developers'
     ],
-    link: '#',
+    link: 'https://www.linkedin.com/posts/srish-bansal_blockchain-ethereum-blockchaintechnology-activity-7168321838140342272-ZQ7g?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAEAFqf4Bg2eb0iB1nfTutNfeArW3-YwVKZw',
     linkText: 'Read Article',
     icon: <FaPen className="text-green-400" />
   }
