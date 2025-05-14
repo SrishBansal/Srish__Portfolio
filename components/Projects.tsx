@@ -17,14 +17,14 @@ const projects = [
     description: 'An innovative software that detects fake QR codes to ensure security.',
     techStack: ['Python', 'OpenCV', 'Machine Learning'],
     githubLink: 'https://github.com/SrishBansal/Fake_QR_Code_Detection',
-    image: '/images/project-qr.jpg'
+    image: '/images/project-qr.webp'
   },
   {
     title: 'Timechain NFT Platform',
     description: 'An MVP allowing artists to store their content and issue a single NFT for ownership.',
     techStack: ['Python', 'Smart Contracts', 'Blockchain'],
     githubLink: 'https://github.com/SrishBansal/Tsoc-_24_H1',
-    image: '/images/project-nft.jpg'
+    image: '/images/project-nft.png'
   },
   {
     title: 'Insurance Verification System',
