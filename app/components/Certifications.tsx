@@ -48,7 +48,7 @@ export default function Certifications() {
       title: 'Google AI Essentials',
       issuer: 'Google',
       platform: 'Coursera',
-      date: '2024',
+      date: '2023',
       icon: <FaGoogle className="text-3xl text-blue-400" />,
       platformIcon: <span className="text-blue-400 text-xl font-bold">C</span>,
       image: '/images/cert4.jpg',

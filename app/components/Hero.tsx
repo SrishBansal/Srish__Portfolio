@@ -21,7 +21,7 @@ const socialLinks = [
   {
     name: 'Email',
     icon: <FaEnvelope className="w-6 h-6" />,
-    href: 'mailto:besrish@gmail.com',
+    href: 'mailto:besrish.work@gmail.com',
     color: 'hover:text-red-400'
   }
 ];

@@ -17,9 +17,7 @@ import {
   SiJavascript,
   SiTypescript,
   SiTailwindcss,
-  SiMongodb,
-  SiMatplotlib,
-  SiSeaborn
+  SiMongodb
 } from 'react-icons/si';
 import { TbBrain } from 'react-icons/tb';
 
@@ -81,16 +79,6 @@ const skills: Skill[] = [
     color: '#013243'
   },
   {
-    icon: <SiMatplotlib className="w-12 h-12" />,
-    name: 'Matplotlib',
-    color: '#0072B2'
-  },
-  {
-    icon: <SiSeaborn className="w-12 h-12" />,
-    name: 'Seaborn',
-    color: '#5A9CA7'
-  },
-  {
     icon: <SiPostgresql className="w-12 h-12" />,
     name: 'PostgreSQL',
     color: '#336791'
@@ -101,20 +89,10 @@ const skills: Skill[] = [
     color: '#47A248'
   },
   {
-    icon: <SiDocker className="w-12 h-12" />,
-    name: 'Docker',
-    color: '#2496ED'
-  },
-  {
     icon: <SiGit className="w-12 h-12" />,
     name: 'Git',
     color: '#F05032'
   },
-  {
-    icon: <SiAmazon className="w-12 h-12" />,
-    name: 'AWS',
-    color: '#FF9900'
-  }
 ];
 
 export default function Skills() {
@@ -137,7 +115,7 @@ export default function Skills() {
         <div className="relative w-full">
           <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-black to-transparent z-10" />
           <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-black to-transparent z-10" />
-          
+
           <div className="flex overflow-hidden">
             <motion.div
               className="flex gap-16 py-8"
@@ -167,7 +145,7 @@ export default function Skills() {
                     delay: index * 0.1,
                   }}
                 >
-                  <div 
+                  <div
                     className="transition-transform duration-300"
                     style={{ color: skill.color }}
                   >
