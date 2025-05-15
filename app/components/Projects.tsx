@@ -17,14 +17,14 @@ const projects = [
     description: 'An innovative software that detects fake QR codes to ensure security.',
     techStack: ['Python', 'OpenCV', 'Machine Learning'],
     githubLink: 'https://github.com/SrishBansal/Fake_QR_Code_Detection',
-    image: '/images/project-qr.jpg'
+    image: '/images/project-qr.webp'
   },
   {
     title: 'Timechain NFT Platform',
     description: 'An MVP allowing artists to store their content and issue a single NFT for ownership.',
     techStack: ['Python', 'Smart Contracts', 'Blockchain'],
     githubLink: 'https://github.com/SrishBansal/Tsoc-_24_H1',
-    image: '/images/project-nft.jpg'
+    image: '/images/project-nft.png'
   },
   {
     title: 'Insurance Verification System',
@@ -95,18 +95,18 @@ export default function Projects() {
                     </span>
                   ))}
                 </div>
-                {project.githubLink && (
-                  <motion.a
-                    href={project.githubLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-block px-6 py-2 bg-blue-600/20 text-blue-400 rounded-lg hover:bg-blue-600/30 transition-colors"
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                  >
-                    View on GitHub
-                  </motion.a>
-                )}
+                {/* project.githubLink && ( */}
+                  {/* <motion.a */}
+                    {/* href={project.githubLink} */}
+                    {/* target="_blank" */}
+                    {/* rel="noopener noreferrer" */}
+                    {/* className="inline-block px-6 py-2 bg-blue-600/20 text-blue-400 rounded-lg hover:bg-blue-600/30 transition-colors" */}
+                    {/* whileHover={{ scale: 1.05 }} */}
+                    {/* whileTap={{ scale: 0.95 }} */}
+                  {/* > */}
+                    {/* View on GitHub */}
+                  {/* </motion.a> */}
+                {/* ) */}
               </div>
             </motion.div>
           ))}

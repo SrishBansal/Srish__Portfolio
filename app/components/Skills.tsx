@@ -17,7 +17,9 @@ import {
   SiJavascript,
   SiTypescript,
   SiTailwindcss,
-  SiMongodb
+  SiMongodb,
+  SiMatplotlib,
+  SiSeaborn
 } from 'react-icons/si';
 import { TbBrain } from 'react-icons/tb';
 
@@ -77,6 +79,16 @@ const skills: Skill[] = [
     icon: <SiNumpy className="w-12 h-12" />,
     name: 'NumPy',
     color: '#013243'
+  },
+  {
+    icon: <SiMatplotlib className="w-12 h-12" />,
+    name: 'Matplotlib',
+    color: '#0072B2'
+  },
+  {
+    icon: <SiSeaborn className="w-12 h-12" />,
+    name: 'Seaborn',
+    color: '#5A9CA7'
   },
   {
     icon: <SiPostgresql className="w-12 h-12" />,

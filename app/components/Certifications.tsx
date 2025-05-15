@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaGoogle, FaAward, FaCertificate } from 'react-icons/fa';
-import { SiCoursera, SiUdemy } from 'react-icons/si';
+import { SiUdemy } from 'react-icons/si';
 
 interface Certificate {
   id: number;
@@ -13,7 +13,6 @@ interface Certificate {
   date: string;
   icon: JSX.Element;
   platformIcon: JSX.Element;
-  description: string;
   image: string;
   verificationLink: string;
 }
@@ -29,22 +28,9 @@ export default function Certifications() {
       platform: 'Coursera',
       date: '2024',
       icon: <FaGoogle className="text-3xl text-blue-400" />,
-      platformIcon: <SiCoursera className="text-blue-400" />,
-      description: 'Skilled in beginner-level Python, Linux, SQL, Security Information and Event Management (SIEM) tools, and Intrusion Detection Systems (IDS). Also how to identify common cybersecurity risks, threats, and vulnerabilities, as well as the techniques to mitigate.',
+      platformIcon: <span className="text-blue-400 text-xl font-bold">C</span>,
       image: '/images/cert1.jpg',
       verificationLink: 'https://www.coursera.org/account/accomplishments/specialization/SHF3E7WVL3M4'
-    },
-    {
-      id: 2,
-      title: 'Data Analysis',
-      issuer: 'NSDC',
-      platform: 'Skill India',
-      date: '2022',
-      icon: <FaAward className="text-3xl text-yellow-400" />,
-      platformIcon: <SiCoursera className="text-blue-400" />,
-      description: 'Advanced deep learning concepts including CNNs, RNNs, and model optimization techniques.',
-      image: '/images/cert2.jpg',
-      verificationLink: 'https://www.linkedin.com/in/srish-bansal/details/certifications/1704726649862/single-media-viewer/?type=IMAGE&profileId=ACoAAEAFqf4Bg2eb0iB1nfTutNfeArW3-YwVKZw'
     },
     {
       id: 3,
@@ -53,8 +39,7 @@ export default function Certifications() {
       platform: 'Timechain labs',
       date: '2024',
       icon: <FaGoogle className="text-3xl text-blue-400" />,
-      platformIcon: <FaGoogle className="text-red-400" />,
-      description: 'DEMONSTRATED PROFICIENCY AS A SKILLED BLOCKCHAIN DEVELOPER AT TIMECHAIN SUMMER OF CODE 2024 WITH GOOD UNDERSTANDING AND INTEGRATION OF BLOCKCHAIN TECHNOLOGY IN FULLSTACK APPLICATIONS.',
+      platformIcon: <span className="text-red-400 text-xl font-bold">Tc</span>,
       image: '/images/cert3.jpg',
       verificationLink: 'https://www.linkedin.com/feed/update/urn:li:activity:7285989654942638081/'
     },
@@ -65,8 +50,7 @@ export default function Certifications() {
       platform: 'Coursera',
       date: '2024',
       icon: <FaGoogle className="text-3xl text-blue-400" />,
-      platformIcon: <SiCoursera className="text-blue-400" />,
-      description: 'Comprehensive understanding about AI tools.',
+      platformIcon: <span className="text-blue-400 text-xl font-bold">C</span>,
       image: '/images/cert4.jpg',
       verificationLink: 'https://www.coursera.org/account/accomplishments/verify/R68PYFXY3ZEF'
     }
@@ -110,7 +94,7 @@ export default function Certifications() {
                   <div className="absolute bottom-4 left-4 right-4">
                     <div className="flex items-center justify-between">
                       <div className="flex items-center space-x-2">
-                        {cert.platformIcon}
+                        <span className="text-sm text-white">{cert.platformIcon}</span>
                         <span className="text-sm text-white">{cert.platform}</span>
                       </div>
                       <span className="text-sm text-gray-300">{cert.date}</span>
@@ -128,7 +112,6 @@ export default function Certifications() {
                       {cert.icon}
                     </div>
                   </div>
-                  <p className="text-gray-300 text-sm mb-4">{cert.description}</p>
                   
                   <motion.button
                     className="w-full px-6 py-2 bg-blue-600/20 text-blue-400 rounded-lg hover:bg-blue-600/30 transition-colors inline-flex items-center justify-center space-x-2"
@@ -179,10 +162,9 @@ export default function Certifications() {
                   />
                   <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80 to-transparent">
                     <h3 className="text-2xl font-bold text-white mb-2">{selectedCert.title}</h3>
-                    <p className="text-gray-300">{selectedCert.description}</p>
                     <div className="flex items-center justify-between mt-4">
                       <div className="flex items-center space-x-2">
-                        {selectedCert.platformIcon}
+                        <span className="text-white">{selectedCert.platformIcon}</span>
                         <span className="text-white">{selectedCert.platform}</span>
                       </div>
                       <a
