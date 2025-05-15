@@ -24,51 +24,51 @@ export default function Certifications() {
   const certificates: Certificate[] = [
     {
       id: 1,
-      title: 'Machine Learning Specialization',
-      issuer: 'Stanford Online & DeepLearning.AI',
+      title: 'Google Cybersecurity Specialization',
+      issuer: 'Google',
       platform: 'Coursera',
       date: '2024',
-      icon: <FaAward className="text-3xl text-yellow-400" />,
+      icon: <FaGoogle className="text-3xl text-blue-400" />,
       platformIcon: <SiCoursera className="text-blue-400" />,
-      description: 'Comprehensive machine learning specialization covering supervised learning, neural networks, and ML deployment.',
-      image: '/cert1.jpg',
-      verificationLink: '#'
+      description: 'Skilled in beginner-level Python, Linux, SQL, Security Information and Event Management (SIEM) tools, and Intrusion Detection Systems (IDS). Also how to identify common cybersecurity risks, threats, and vulnerabilities, as well as the techniques to mitigate.',
+      image: '/images/cert1.jpg',
+      verificationLink: 'https://www.coursera.org/account/accomplishments/specialization/SHF3E7WVL3M4'
     },
     {
       id: 2,
-      title: 'Deep Learning Specialization',
-      issuer: 'DeepLearning.AI',
-      platform: 'Coursera',
-      date: '2024',
+      title: 'Data Analysis',
+      issuer: 'NSDC',
+      platform: 'Skill India',
+      date: '2022',
       icon: <FaAward className="text-3xl text-yellow-400" />,
       platformIcon: <SiCoursera className="text-blue-400" />,
       description: 'Advanced deep learning concepts including CNNs, RNNs, and model optimization techniques.',
-      image: '/cert2.jpg',
-      verificationLink: '#'
+      image: '/images/cert2.jpg',
+      verificationLink: 'https://www.linkedin.com/in/srish-bansal/details/certifications/1704726649862/single-media-viewer/?type=IMAGE&profileId=ACoAAEAFqf4Bg2eb0iB1nfTutNfeArW3-YwVKZw'
     },
     {
       id: 3,
-      title: 'TensorFlow Developer Certificate',
-      issuer: 'Google',
-      platform: 'Google',
+      title: 'Timechain Blockchain developer',
+      issuer: 'Timechain labs',
+      platform: 'Timechain labs',
       date: '2024',
       icon: <FaGoogle className="text-3xl text-blue-400" />,
       platformIcon: <FaGoogle className="text-red-400" />,
-      description: 'Professional certification in TensorFlow development and ML model deployment.',
-      image: '/cert3.jpg',
-      verificationLink: '#'
+      description: 'DEMONSTRATED PROFICIENCY AS A SKILLED BLOCKCHAIN DEVELOPER AT TIMECHAIN SUMMER OF CODE 2024 WITH GOOD UNDERSTANDING AND INTEGRATION OF BLOCKCHAIN TECHNOLOGY IN FULLSTACK APPLICATIONS.',
+      image: '/images/cert3.jpg',
+      verificationLink: 'https://www.linkedin.com/feed/update/urn:li:activity:7285989654942638081/'
     },
     {
       id: 4,
-      title: 'Complete Python Bootcamp',
-      issuer: 'Udemy',
-      platform: 'Udemy',
-      date: '2023',
-      icon: <FaCertificate className="text-3xl text-purple-400" />,
-      platformIcon: <SiUdemy className="text-purple-400" />,
-      description: 'Comprehensive Python programming from basics to advanced concepts.',
-      image: '/cert4.jpg',
-      verificationLink: '#'
+      title: 'Google AI Essentials',
+      issuer: 'Google',
+      platform: 'Coursera',
+      date: '2024',
+      icon: <FaGoogle className="text-3xl text-blue-400" />,
+      platformIcon: <SiCoursera className="text-blue-400" />,
+      description: 'Comprehensive understanding about AI tools.',
+      image: '/images/cert4.jpg',
+      verificationLink: 'https://www.coursera.org/account/accomplishments/verify/R68PYFXY3ZEF'
     }
   ];
 

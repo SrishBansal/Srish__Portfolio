@@ -8,7 +8,6 @@ import {
   SiScikitlearn,
   SiPandas,
   SiNumpy,
-  SiReact,
   SiPostgresql,
   SiPytorch,
   SiJupyter,
@@ -17,9 +16,7 @@ import {
   SiAmazon,
   SiJavascript,
   SiTypescript,
-  SiNextdotjs,
   SiTailwindcss,
-  SiNodedotjs,
   SiMongodb
 } from 'react-icons/si';
 import { TbBrain } from 'react-icons/tb';
