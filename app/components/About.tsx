@@ -125,7 +125,7 @@ const skills: Skill[] = [
 export default function About() {
   return (
     <section id="about" className="min-h-screen flex items-center justify-center py-20 bg-black">
-      <div className="max-w-6xl mx-auto px-4">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -183,7 +183,7 @@ export default function About() {
               
               <div className="flex overflow-hidden">
                 <motion.div
-                  className="flex gap-12 py-6"
+                  className="flex gap-6 md:gap-8 lg:gap-12 py-6"
                   animate={{
                     x: ["0%", "-50%"]
                   }}
