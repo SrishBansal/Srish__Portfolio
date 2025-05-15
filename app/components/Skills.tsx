@@ -4,20 +4,19 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import {
   SiPython,
+  SiTypescript,
+  SiJavascript,
+  SiTailwindcss,
   SiTensorflow,
   SiScikitlearn,
-  SiPandas,
-  SiNumpy,
-  SiPostgresql,
   SiPytorch,
-  SiJupyter,
-  SiDocker,
+  SiNumpy,
+  SiPandas,
+  SiPostgresql,
+  SiMysql,
   SiGit,
-  SiAmazon,
-  SiJavascript,
-  SiTypescript,
-  SiTailwindcss,
-  SiMongodb
+  SiJupyter,
+  SiGooglecolab
 } from 'react-icons/si';
 import { TbBrain } from 'react-icons/tb';
 
@@ -34,14 +33,14 @@ const skills: Skill[] = [
     color: '#3776AB'
   },
   {
-    icon: <SiJavascript className="w-12 h-12" />,
-    name: 'JavaScript',
-    color: '#F7DF1E'
-  },
-  {
     icon: <SiTypescript className="w-12 h-12" />,
     name: 'TypeScript',
     color: '#3178C6'
+  },
+  {
+    icon: <SiJavascript className="w-12 h-12" />,
+    name: 'JavaScript',
+    color: '#F7DF1E'
   },
   {
     icon: <SiTailwindcss className="w-12 h-12" />,
@@ -69,14 +68,14 @@ const skills: Skill[] = [
     color: '#00A3E0'
   },
   {
-    icon: <SiPandas className="w-12 h-12" />,
-    name: 'Pandas',
-    color: '#150458'
-  },
-  {
     icon: <SiNumpy className="w-12 h-12" />,
     name: 'NumPy',
     color: '#013243'
+  },
+  {
+    icon: <SiPandas className="w-12 h-12" />,
+    name: 'Pandas',
+    color: '#150458'
   },
   {
     icon: <SiPostgresql className="w-12 h-12" />,
@@ -84,14 +83,19 @@ const skills: Skill[] = [
     color: '#336791'
   },
   {
-    icon: <SiMongodb className="w-12 h-12" />,
-    name: 'MongoDB',
-    color: '#47A248'
+    icon: <SiMysql className="w-12 h-12" />,
+    name: 'MySQL',
+    color: '#4479A1'
   },
   {
     icon: <SiGit className="w-12 h-12" />,
     name: 'Git',
     color: '#F05032'
+  },
+  {
+    icon: <SiJupyter className="w-12 h-12" />,
+    name: 'Jupyter/Colab',
+    color: '#F37626'
   },
 ];
 
