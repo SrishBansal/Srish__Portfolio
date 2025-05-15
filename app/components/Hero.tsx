@@ -157,9 +157,9 @@ export default function Hero() {
             className="relative w-72 h-72 md:w-96 md:h-96"
           >
             <div className="absolute inset-0 rounded-full bg-gradient-to-r from-blue-400 to-blue-600 animate-spin-slow blur-xl opacity-20" />
-            <div className="relative w-full h-full rounded-full border-2 border-blue-500/20 overflow-hidden">
+            <div className="relative w-full h-full rounded-full border-2 border-blue-400 overflow-hidden">
               <img
-                src="/profile.jpg"
+                src="/images/portfolio img.png"
                 alt="Srish Bansal"
                 className="w-full h-full object-cover"
               />

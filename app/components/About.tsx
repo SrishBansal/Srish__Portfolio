@@ -2,22 +2,24 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaCode, FaLaptopCode, FaServer, FaDatabase } from 'react-icons/fa';
 import {
   SiPython,
+  SiTypescript,
+  SiJavascript,
+  SiTailwindcss,
   SiTensorflow,
   SiScikitlearn,
-  SiPandas,
-  SiNumpy,
-  SiReact,
-  SiPostgresql,
   SiPytorch,
-  SiJavascript,
-  SiTypescript,
-  SiNextdotjs,
-  SiTailwindcss,
-  SiNodedotjs,
-  SiMongodb
+  SiNumpy,
+  SiPandas,
+  SiPostgresql,
+  SiMysql,
+  SiGit,
+  SiJupyter,
+  SiOpencv,
+  SiHtml5,
+  SiCss3,
+  SiC
 } from 'react-icons/si';
 import { TbBrain } from 'react-icons/tb';
 
@@ -29,9 +31,9 @@ interface Skill {
 
 const skills: Skill[] = [
   {
-    icon: <SiJavascript className="w-12 h-12" />,
-    name: 'JavaScript',
-    color: '#F7DF1E'
+    icon: <SiPython className="w-12 h-12" />,
+    name: 'Python',
+    color: '#3776AB'
   },
   {
     icon: <SiTypescript className="w-12 h-12" />,
@@ -39,29 +41,14 @@ const skills: Skill[] = [
     color: '#3178C6'
   },
   {
-    icon: <SiReact className="w-12 h-12" />,
-    name: 'React',
-    color: '#61DAFB'
-  },
-  {
-    icon: <SiNextdotjs className="w-12 h-12" />,
-    name: 'Next.js',
-    color: '#000000'
-  },
-  {
-    icon: <SiNodedotjs className="w-12 h-12" />,
-    name: 'Node.js',
-    color: '#339933'
+    icon: <SiJavascript className="w-12 h-12" />,
+    name: 'JavaScript',
+    color: '#F7DF1E'
   },
   {
     icon: <SiTailwindcss className="w-12 h-12" />,
     name: 'Tailwind',
     color: '#06B6D4'
-  },
-  {
-    icon: <SiPython className="w-12 h-12" />,
-    name: 'Python',
-    color: '#3776AB'
   },
   {
     icon: <SiTensorflow className="w-12 h-12" />,
@@ -84,9 +71,54 @@ const skills: Skill[] = [
     color: '#00A3E0'
   },
   {
+    icon: <SiNumpy className="w-12 h-12" />,
+    name: 'NumPy',
+    color: '#013243'
+  },
+  {
     icon: <SiPandas className="w-12 h-12" />,
     name: 'Pandas',
     color: '#150458'
+  },
+  {
+    icon: <SiOpencv className="w-12 h-12" />,
+    name: 'OpenCV',
+    color: '#5C3EE8'
+  },
+  {
+    icon: <SiPostgresql className="w-12 h-12" />,
+    name: 'PostgreSQL',
+    color: '#336791'
+  },
+  {
+    icon: <SiMysql className="w-12 h-12" />,
+    name: 'MySQL',
+    color: '#4479A1'
+  },
+  {
+    icon: <SiGit className="w-12 h-12" />,
+    name: 'Git',
+    color: '#F05032'
+  },
+  {
+    icon: <SiJupyter className="w-12 h-12" />,
+    name: 'Jupyter',
+    color: '#F37626'
+  },
+  {
+    icon: <SiHtml5 className="w-12 h-12" />,
+    name: 'HTML',
+    color: '#E34F26'
+  },
+  {
+    icon: <SiCss3 className="w-12 h-12" />,
+    name: 'CSS',
+    color: '#1572B6'
+  },
+  {
+    icon: <SiC className="w-12 h-12" />,
+    name: 'C',
+    color: '#A8B9CC'
   }
 ];
 
