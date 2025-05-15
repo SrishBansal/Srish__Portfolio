@@ -112,7 +112,7 @@ export default function Experience() {
                 {exp.icon}
               </div>
 
-              <div className={`pl-16 md:pl-0 ${index % 2 === 0 ? 'md:pr-24' : 'md:pl-24'}`}>
+              <div className={`pl-8 md:pl-0 ${index % 2 === 0 ? 'md:pr-24' : 'md:pl-24'}`}>
                 <div className="bg-blue-900/10 rounded-xl p-6 hover:bg-blue-900/20 transition-all group">
                   <div className="flex flex-col items-start">
                     <div className="flex items-center justify-between w-full mb-2">

@@ -146,7 +146,7 @@ export default function About() {
           viewport={{ once: true }}
           className="space-y-12"
         >
-          <div className="text-gray-300 max-w-4xl mx-auto">
+          <div className="text-gray-300 mx-auto">
             <p className="text-lg leading-relaxed mb-6">
               Hey there! 👋 I'm a passionate Software Developer with a strong focus on machine learning
               and AI development. Currently contributing to innovative solutions using cutting-edge ML technologies
@@ -202,7 +202,7 @@ export default function About() {
                   {[...skills, ...skills].map((skill, index) => (
                     <motion.div
                       key={`${skill.name}-${index}`}
-                      className="flex flex-col items-center justify-center gap-4 min-w-[100px]"
+                      className="flex flex-col items-center justify-center gap-4"
                       initial={{ opacity: 0.5, scale: 0.95 }}
                       animate={{ opacity: 1, scale: 1 }}
                       transition={{

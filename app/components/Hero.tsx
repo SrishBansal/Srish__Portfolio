@@ -120,7 +120,7 @@ export default function Hero() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.6 }}
-                className="text-xl md:text-2xl text-gray-400 max-w-2xl"
+                className="text-xl md:text-2xl text-gray-400"
               >
                 Building innovative solutions at the intersection of AI and web technologies
               </motion.p>
@@ -154,7 +154,7 @@ export default function Hero() {
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5, delay: 0.8 }}
-            className="relative w-72 h-72 md:w-96 md:h-96"
+            className="relative w-48 h-48 sm:w-64 sm:h-64 md:w-72 md:h-72 lg:w-96 lg:h-96"
           >
             <div className="absolute inset-0 rounded-full bg-gradient-to-r from-blue-400 to-blue-600 animate-spin-slow blur-xl opacity-20" />
             <div className="relative w-full h-full rounded-full border-2 border-blue-400 overflow-hidden">

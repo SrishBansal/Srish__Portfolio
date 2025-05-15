@@ -58,7 +58,7 @@ export default function Certifications() {
 
   return (
     <section id="certifications" className="py-20 bg-black">
-      <div className="max-w-6xl mx-auto px-4">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -84,7 +84,7 @@ export default function Certifications() {
               onClick={() => setSelectedCert(cert)}
             >
               <div className="relative bg-blue-900/10 rounded-xl overflow-hidden hover:bg-blue-900/20 transition-all">
-                <div className="relative h-48">
+                <div className="relative">
                   <img
                     src={cert.image}
                     alt={cert.title}

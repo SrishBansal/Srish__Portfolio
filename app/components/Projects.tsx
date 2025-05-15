@@ -62,7 +62,7 @@ export default function Projects() {
               viewport={{ once: true }}
               className="bg-blue-900/20 rounded-lg overflow-hidden hover:bg-blue-900/30 transition-all group"
             >
-              <div className="relative h-48 overflow-hidden">
+              <div className="relative overflow-hidden">
                 {project.image && (
                   <img
                     src={project.image}
