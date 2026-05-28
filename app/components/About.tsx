@@ -146,20 +146,27 @@ export default function About() {
           viewport={{ once: true }}
           className="space-y-12"
         >
-          <div className="text-gray-300 mx-auto">
-            <p className="text-lg leading-relaxed mb-6">
-              Hey there! 👋 I'm a passionate Software Developer with a strong focus on machine learning
-              and AI development. Currently contributing to innovative solutions using cutting-edge ML technologies
-              and modern web development frameworks.
+          <div className="text-gray-300 max-w-3xl mx-auto text-left space-y-6">
+            <p className="text-xl leading-relaxed font-medium bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-400">
+              I spend a lot of time thinking about why things work.
             </p>
-            <p className="text-lg leading-relaxed mb-6">
-              Recently, I've been working on projects involving deep learning models and data analysis,
-              combining my expertise in Python and ML frameworks to create impactful solutions.
+            <p className="text-lg leading-relaxed text-gray-300">
+              Why do some products instantly click with people while others feel forgettable? Why do certain ideas suddenly take over the internet? Why are so many workflows still painfully manual when they clearly shouldn’t be?
             </p>
-            <p className="text-lg leading-relaxed">
-              Beyond coding, I've demonstrated leadership as a Team Lead for the Round Square and MUN society
-              at BPS Pilani 🎯. I'm always excited to explore new technologies and contribute to projects
-              that push the boundaries of what's possible with AI and web technologies.
+            <p className="text-lg leading-relaxed text-gray-300">
+              That curiosity is what pulled me into building.
+            </p>
+            <p className="text-lg leading-relaxed text-gray-300">
+              I’m currently pursuing Computer Science and Business Systems in Pune, but most of my real learning has happened outside classrooms — through building projects, experimenting with AI tools, breaking systems, fixing them again, and obsessing over startups, products, and internet culture a little more than I probably should.
+            </p>
+            <p className="text-lg leading-relaxed text-gray-300">
+              Over the last couple of years, I’ve worked on projects across AI, analytics, fintech, and workflow automation — from an AI mental health companion for students to systems that process insurance claims and financial data. Somewhere along the way, I realized I enjoy much more than just coding. I like understanding users, reducing friction, improving workflows, and figuring out how technology actually becomes useful in the real world.
+            </p>
+            <p className="text-lg leading-relaxed text-gray-300">
+              I enjoy environments where people move fast, experiment constantly, and care more about shipping meaningful things than sounding impressive.
+            </p>
+            <p className="text-lg leading-relaxed text-gray-300">
+              Right now, I’m focused on learning aggressively, building ambitious things, and getting better at turning messy ideas into real products.
             </p>
           </div>
 
