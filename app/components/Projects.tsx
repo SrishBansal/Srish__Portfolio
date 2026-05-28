@@ -2,9 +2,34 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaGithub } from 'react-icons/fa';
+import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 
-const projects = [
+interface Project {
+  title: string;
+  description: string;
+  techStack: string[];
+  githubLink?: string;
+  liveLink?: string;
+  image?: string;
+}
+
+const projects: Project[] = [
+  {
+    title: 'Taxicity',
+    description: 'A real-time Indian tax optimization engine that extracts transactions using Gemini API, computes tax spanning 10 brackets across both fiscal regimes in FastAPI, and features a reactive Next.js dashboard.',
+    techStack: ['Python', 'FastAPI', 'Next.js', 'PostgreSQL', 'Gemini API'],
+    githubLink: 'https://github.com/SrishBansal/Taxicity',
+    liveLink: 'https://taxicity-nine.vercel.app/',
+    image: '/images/project-taxicity.png'
+  },
+  {
+    title: 'Manas Mitra',
+    description: 'An anonymous, multilingual AI mental health companion for Indian students. Features a CBT-based RAG pipeline via ChromaDB, zero-latency crisis interception, and a 3-tier API fallback system.',
+    techStack: ['Next.js', 'FastAPI', 'ChromaDB', 'Gemini 2.0', 'PEFT'],
+    githubLink: 'https://github.com/SrishBansal/Manas-Mitra-Optimal-',
+    liveLink: 'https://manas-mitra-hahu.vercel.app/',
+    image: '/images/project-manas-mitra.png'
+  },
   {
     title: 'Music Recommendation System',
     description: 'A personalized music recommendation system built using Spotify API and Gradio for a sleek, Netflix-inspired UI.',
@@ -60,53 +85,84 @@ export default function Projects() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: index * 0.2 }}
               viewport={{ once: true }}
-              className="bg-blue-900/20 rounded-lg overflow-hidden hover:bg-blue-900/30 transition-all group"
+              className="bg-blue-900/20 rounded-lg overflow-hidden hover:bg-blue-900/30 transition-all group flex flex-col justify-between"
             >
-              <div className="relative overflow-hidden">
-                {project.image && (
-                  <img
-                    src={project.image}
-                    alt={project.title}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                  />
-                )}
+              <div>
+                <div className="relative overflow-hidden aspect-video">
+                  {project.image && (
+                    <img
+                      src={project.image}
+                      alt={project.title}
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    />
+                  )}
+                  <div className="absolute top-3 right-3 flex gap-2">
+                    {project.githubLink && (
+                      <a
+                        href={project.githubLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="w-10 h-10 bg-black/60 rounded-full flex items-center justify-center backdrop-blur-sm hover:bg-blue-600 transition-colors shadow-lg"
+                        title="View GitHub Repository"
+                      >
+                        <FaGithub className="text-white text-xl" />
+                      </a>
+                    )}
+                    {project.liveLink && (
+                      <a
+                        href={project.liveLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="w-10 h-10 bg-black/60 rounded-full flex items-center justify-center backdrop-blur-sm hover:bg-blue-600 transition-colors shadow-lg"
+                        title="View Live Site"
+                      >
+                        <FaExternalLinkAlt className="text-white text-base" />
+                      </a>
+                    )}
+                  </div>
+                </div>
+                
+                <div className="p-6">
+                  <h3 className="text-xl font-semibold mb-4 text-blue-400">{project.title}</h3>
+                  <p className="text-gray-300 mb-4">{project.description}</p>
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    {project.techStack.map((tech, techIndex) => (
+                      <span
+                        key={techIndex}
+                        className="px-3 py-1 text-sm bg-blue-600/20 text-blue-400 rounded-full"
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              </div>
+
+              <div className="px-6 pb-6 pt-0 flex gap-4">
                 {project.githubLink && (
-                  <a
+                  <motion.a
                     href={project.githubLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="absolute top-3 right-3 w-10 h-10 bg-black/50 rounded-full flex items-center justify-center backdrop-blur-sm hover:bg-blue-600/50 transition-colors"
+                    className="inline-flex items-center gap-2 px-4 py-2 bg-blue-600/20 text-blue-400 rounded-lg hover:bg-blue-600/30 transition-colors text-sm font-medium"
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
                   >
-                    <FaGithub className="text-white text-xl" />
-                  </a>
+                    <FaGithub /> GitHub
+                  </motion.a>
                 )}
-              </div>
-              
-              <div className="p-6">
-                <h3 className="text-xl font-semibold mb-4 text-blue-400">{project.title}</h3>
-                <p className="text-gray-300 mb-4">{project.description}</p>
-                <div className="flex flex-wrap gap-2 mb-4">
-                  {project.techStack.map((tech, techIndex) => (
-                    <span
-                      key={techIndex}
-                      className="px-3 py-1 text-sm bg-blue-600/20 text-blue-400 rounded-full"
-                    >
-                      {tech}
-                    </span>
-                  ))}
-                </div>
-                {/* project.githubLink && ( */}
-                  {/* <motion.a */}
-                    {/* href={project.githubLink} */}
-                    {/* target="_blank" */}
-                    {/* rel="noopener noreferrer" */}
-                    {/* className="inline-block px-6 py-2 bg-blue-600/20 text-blue-400 rounded-lg hover:bg-blue-600/30 transition-colors" */}
-                    {/* whileHover={{ scale: 1.05 }} */}
-                    {/* whileTap={{ scale: 0.95 }} */}
-                  {/* > */}
-                    {/* View on GitHub */}
-                  {/* </motion.a> */}
-                {/* ) */}
+                {project.liveLink && (
+                  <motion.a
+                    href={project.liveLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-500 transition-colors text-sm font-medium shadow-md shadow-blue-600/20"
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                  >
+                    <FaExternalLinkAlt className="text-xs" /> Live Demo
+                  </motion.a>
+                )}
               </div>
             </motion.div>
           ))}
